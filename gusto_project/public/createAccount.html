@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/createAccount.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div>
+                <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="bodyDiv">
+        <div class="bodyDivMenu">
+            <div>
+                <img src="https://prod.gusto-assets.com/assets/packs/media/signupV2/plant_shop_employees-d521fb8d.svg" alt="">
+            </div>
+            <div class="formMainDiv">
+                <div class="formDiv">
+                    <div>
+                      <form action="#">
+                        <div class="form-control text-center border border-2" id="google"><img src="https://prod.gusto-assets.com/assets/packs/media/icons/partner-logo-google-cd0f2b38.svg" alt="google logo" width="3.5%">SignUp with Google</div>
+                        <p><span>or</span></p>
+                            <div class="name">
+                                <dl>
+                                    <dt>
+                                        <label for="name" class="form-check-label mb-2">First name</label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="name" class="form-control" placeholder="First name">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <label for="lname" class="form-check-label mb-2">last name</label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="lname" class="form-control" placeholder="Last name">
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>
+                                        <label for="lname" class="form-check-label mb-2">Work email</label>
+                                    </dt>
+                                    <dd>
+                                        <input type="email" name="lname" placeholder="Work email address" class="form-control" id="email" required>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>
+                                        <label for="lname" class="form-check-label mb-2">Company name</label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="lname" placeholder="Company name" class="form-control">
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="name">
+                                <dl>
+                                    <dt>
+                                        <label for="name" class="form-check-label mb-2">No. of employees</label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="name" placeholder="No. of employees" class="form-control">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <label for="lname" class="form-check-label mb-2">Company phone</label>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="lname" placeholder="(+91) 10 digit" class="form-control">
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>
+                                        <label for="lname" class="form-check-label mb-2">Set password</label>
+                                    </dt>
+                                    <dd class="input-group">
+                                       <input type="password" class="form-control" id="setPassword" required>
+                                       <button class="hideBtn" id="setShow">Show</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <p>Password strength:</p>
+                                <ul type="circle" style="list-style-position: outside;">
+                                    <li>Use 8 or more characters.</li>
+                                    <li>Use a minimum of one letter.</li>
+                                    <li>Use a minimum of one number.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>
+                                        <label for="lname" class="form-check-label mb-2">Confirm password</label>
+                                    </dt>
+                                    <dd class="input-group">
+                                       <input type="password" class="form-control" id="confirmPassword" required>
+                                       <button class="hideBtn" id="confirmShow">Show</button>
+                                    </dd>
+                                    <p id="passwordMsg"></p>
+                                </dl>
+                            </div>
+                            <div>
+                                <input type = submit value="Create Account" class="btn btn-danger w-100 p-2" id="createBtn">
+                            </div>
+                            <div class="text-center mt-4 mb-4">
+                                <p class="fw-bold">Already use Gusto? <a href="../public/signin.html">Sign in here.</a></p>
+                                <p>
+                                    By creating an account, you agree to the <a href="#">terms & conditions,</a> the <a href="#">payroll terms,</a> and our <a href="#">privacy policy.</a>
+                                </p>
+                            </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    let setPass = document.getElementById("setPassword");
+    let setShow = document.getElementById("setShow");
+    let confirmPass = document.getElementById("confirmPassword");
+    let confirmShow = document.getElementById("confirmShow");
+    let passwordMsg = document.getElementById("passwordMsg")
+    let isPassword = "false"
+    setShow.addEventListener('click',function(e){
+        e.preventDefault();
+        if(isPassword){
+            setPass.value=setPass.value;
+            setPass.type="text"
+            setShow.innerHTML="Hide"
+            isPassword=false;
+        }
+        else{
+            setPass.value=setPass.value;
+            setPass.type="password"
+            setShow.innerHTML="Show"
+            isPassword=true;
+        }
+
+    })
+    confirmShow.addEventListener('click',function(e){
+        e.preventDefault();
+        if(isPassword){
+            confirmPass.value=confirmPass.value;
+            confirmPass.type="text"
+            confirmShow.innerHTML="Hide"
+            isPassword=false;
+        }
+        else{
+            confirmPass.value=confirmPass.value;
+            confirmPass.type="password"
+            confirmShow.innerHTML="Show"
+            isPassword=true;
+        }
+    })
+    confirmPass.addEventListener('keyup',function(e){
+        // e.preventDefault();
+        checkPassword();
+    })
+    function checkPassword(){
+        if(setPass.value==confirmPass.value){
+            // console.log(setPass.value,confirmPass.value)
+            passwordMsg.innerHTML="Password Match"
+            passwordMsg.style.color="green";
+        }
+        else{
+            // console.log(setPass.value,confirmPass.value)
+           passwordMsg.innerHTML="Passwords do not match.";
+           passwordMsg.style.color="red"
+        }
+    }
+
+    createBtn.addEventListener('click', (e) =>{
+        e.preventDefault();
+        let mail = document.getElementById("email").value;
+        let pass = confirmPass.value;
+        let mal = localStorage.getItem("Email")
+        let pas = localStorage.getItem("Password")
+        
+        if(mail==mal || pass== pas){
+            alert("You have already account")
+        }else{
+            localStorage.setItem("Email",mail)
+            localStorage.setItem("Password",pass)
+            document.querySelector("form").reset();
+        }
+    })
+    
+</script>
+</html>

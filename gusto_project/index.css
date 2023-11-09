@@ -1,0 +1,1640 @@
+*{
+    font-size: 10px;
+}
+body{
+    font-size: 10px;
+    /* border: 2px solid blue;
+    width: 100%; */
+}
+header{
+    /* display: none; */
+    /* border: 2px solid red; */
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: #ddd;
+    margin-block-end: 4rem;
+}
+.navHeader{
+    /* width: 100%; */
+    margin: auto;
+    /* border: 2px solid green; */
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 2rem;
+    font-family:  -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #222525;
+    font-weight: 500;
+}
+header ul li{
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+header ul li a img{
+    width: 9rem;
+}
+header ul li:hover{
+    color: rgb(73, 182, 182);
+}
+#demo{
+    text-decoration: underline;
+    color: teal;
+}
+#demo:hover{
+    color: rgb(73, 182, 182);
+}
+.workBtn{
+ padding: 1.2rem;
+ border: none;
+ border-radius: 5px;
+ background-color: rgb(208, 86, 86);
+ color: #fff;
+}
+.workBtn:hover{
+    text-decoration: underline;
+}
+nav ul .text-teal,.headPara{
+    font-size: 1.6rem;
+}
+nav ul .text-teal+p,.headPara+p{
+    font-size: 1.6rem;
+}
+#solutionLast,#solutionLast a{
+    font-size: 1.6rem;
+}
+.accountBtn{
+    background-color: #ddd;
+    padding: 1.2rem; 
+    border: none; 
+    color: #222525;
+    border-radius: 5px;
+}
+.accountBtn:hover{
+    color: rgb(73, 182, 182);
+    text-decoration: underline;
+}
+.productsMenu,.solutionMenu, .accountMenu, .resourceMenu{
+    position: relative;
+}
+.productsMenu .productSub, .solutionMenu .solutionSub, .accountMenu .accountSub, .resourceMenu .resourceSub{
+    display: none;
+}
+.productsMenu:hover .productSub, .solutionMenu:hover .solutionSub,.accountMenu:hover .accountSub, .resourceMenu:hover .resourceSub{
+    display: inline;
+    position: absolute;
+    top: 1.7rem;
+    left: -1.5rem;
+    width: 90rem;
+    background-color: transparent;
+    padding: 1rem;
+}
+.productsMenu:hover .productSub .products h4,.solutionMenu:hover .solutionSub .solution div h4, .resourceMenu:hover .resourceSub .resource div h4{
+    color: #525252;
+    margin-bottom: 1.5rem;
+}
+.productsMenu:hover .productSub .products, .resourceMenu:hover .resourceSub .resource{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    width: 80rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+}
+.productsMenu:hover .products div,.solutionMenu:hover .solutionSub .solution>div>div, .resourceMenu .resourceSub .resource div{
+    border-bottom: 1px solid lightgray;
+}
+.productsMenu:hover .products .hidde, .resourceMenu:hover .resource .hidde{
+    border-bottom: none;
+    visibility: hidden;
+}
+.productsMenu:hover .products div:last-child,.solutionMenu:hover .solutionSub .solution>div>div:last-child,.productsMenu:hover .products div:nth-child(11),.resourceMenu .resourceSub .resource div:nth-child(11),.accountMenu .accountSub .account div:last-child,.accountMenu .accountSub .account div:nth-child(5){
+    border-bottom: none;
+}
+.text-teal,.headPara{
+    color: teal;
+}
+.text-teal+p,.headPara+p{
+    font-weight: 400;
+    color: #222525;
+}
+.solutionMenu:hover .solutionSub .solution{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    width: 80rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    color: black;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+.solutionMenu:hover .solutionSub .solution>div div{
+    margin-top: 1rem;
+}
+.solutionMenu:hover .solutionSub .solution>div ul{
+    display:block;
+    width: 23rem;
+}
+.solutionMenu:hover .solutionSub .solution>div ul li{
+    margin-bottom: 1.5rem;
+}
+.solutionMenu:hover .solutionSub .solution+div{
+    background-color: #ddd;
+    color: #222525;
+    font-weight: 400;
+    width: 80rem;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.accountMenu:hover .accountSub{
+    width: 50rem;
+}
+.accountMenu .accountSub .account{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    width: 45rem;
+    background-color: #FFF;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.accountMenu .accountSub .account div{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+.responsiveNav{
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon{
+    width: 4rem;
+    height: 4rem;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+#logo{
+    display: none;
+}
+.modal_btn ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+ }
+ .modal_btn ul li{
+    margin-right: 2rem;
+ }
+ .modal_btn ul li button{
+    border-radius: 0rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    padding:.7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+ }
+ .modalPara{
+    font-size: 1.5rem;
+ }
+ main{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    background-color: transparent;
+    margin-bottom: 4rem;
+}
+.left_main_panel{
+    width: 50%;
+}
+.right_main_img{
+    width: 50%
+}
+.right_main_img img{
+    width: 80%;
+}
+#mainHeading{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+}
+#mainHeading+p{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.butto_Menu{
+    display: flex;
+}
+.butto_Menu div{
+    width: 30%;
+    margin-right: 1rem;
+}
+.butto_Menu div button{
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.main_list{
+    font-size: 1.6rem;
+}
+.main_list i{
+    color: teal;
+    font-size: 2.5rem;
+}
+.main_sign{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.main_sign a{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+#modalStart .modal_logo img{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#modalStart button{
+    font-size: 2rem;
+}
+#modalStart #demo{
+    font-size: 2rem;
+}
+#modalStart #demo i{
+    font-size: 2rem;
+}
+.sectionFirst{
+    background-color: #005961;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.sectionFirst-menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 60%;
+    
+}
+.sectionInner{
+    padding: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    height: 100%;
+    border-right: 1px solid lightgray;
+}
+.last{
+    border: none;
+}
+.sectionFirst-menu>div{
+    padding-top: 15rem;
+}
+.sectionFirst-menu div img{
+    width: 90%;
+}
+.sectionFirst-menu div p{
+    font-size: 1.8rem;
+    color: #FFF;
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+.sectionSecond{
+    /* display: none; */
+    width: 100%;
+}
+.sectionSecond .sectionSecondMenu{
+    width: 90%;
+    margin: auto;
+    margin-top: 12rem;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.sectionSecond .sectionSecondMenu>div{
+    width: 50%;
+}
+.sectionSeconAccordionHeading{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    margin-bottom: 2rem;
+}
+.sectionSeconAccordion .accordion-button{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+}
+.sectionSeconAccordion .accordion-body p{
+    font-size: 1.6rem;
+}
+.sectionSeconAccordion .accordion-body p+div a{
+    font-size: 1.6rem;
+    color: teal;
+}
+.secondSectionBtn button{
+   padding: 1rem;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   font-weight: 600;
+   font-size: 1.8rem;
+   margin-top: 6rem;
+   border: none;
+}
+.sectionSecond .sectionSecondMenu .sectionSecond_img{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+.sectionThird{
+    /* display: none; */
+    background-color: #eee;
+}
+
+.sectionThird .sectionThirdMenu{
+    width: 50%;
+    margin: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara{
+   text-align: center;
+   color: rgb(184, 53, 26);
+   font-size: 1.8rem;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p{
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div>div>img{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div>div:last-child{
+    font-size: 1.6rem;
+    border: 1px solid lightgray;
+    padding: .5rem;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div+p{
+    text-align: center;
+    margin-top: 5rem;
+}
+.sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div+p a{
+    font-size: 1.6rem;
+    color: teal;
+}
+.sectionForth .sectionForthMenu{
+    /* display: none; */
+    margin: auto;
+    /* border: 2px solid green; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionForth .sectionForthMenu>div img{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.sectionForth .sectionForthMenu>div:last-child{
+    /* border: 2px solid blue; */
+    margin: 3rem;
+} 
+.sectionForth .sectionForthMenu>div>p:first-child{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+.sectionForth .sectionForthMenu>div>p:first-child+p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.sectionForth .sectionForthMenu>div>p:first-child+p+p a{
+    font-size: 1.8rem;
+    color: teal;
+}
+.sectionFifth .sectionFifthMenu{
+    /* display: none; */
+    margin: auto;
+    /* border: 2px solid green; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionFifth .sectionFifthMenu>div img{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.sectionFifth .sectionFifthMenu>div:first-child{
+    /* border: 2px solid blue; */
+    margin: 3rem;
+} 
+.sectionFifth .sectionFifthMenu>div>p:first-child{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    line-height: 4.5rem;
+}
+.sectionFifth .sectionFifthMenu>div>p:first-child+p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.sectionFifth .sectionFifthMenu>div>p:first-child+p+p a{
+    font-size: 1.8rem;
+    color: teal;
+}
+.sectionSix{
+    padding-top: 10rem;
+    /* display: none; */
+}
+.sectionSix .sectionSixMenu{
+    /* border: 2px solid green; */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+.sectionSix .sectionSixMenu>div:first-child h1{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+.sectionSix .sectionSixMenu .sectionSixcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.sectionSix .sectionSixMenu .sectionSixcard>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+    padding: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    width: 15%;
+}
+.sectionSix .sectionSixMenu .sectionSixcard>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionSix .sectionSixMenu .sectionSixcard>div p a{
+    color: teal;
+    font-size: 1.8rem;
+}
+.sectionSix .sectionSixMenu .sectionSixcard>div p a:hover{
+    color: rgb(75, 177, 177);
+    font-size: 1.7rem;
+}
+
+
+
+.sectionSeven{
+    /* border: 2px solid red; */
+    background-color: #eae5e5;
+    margin-top: 3rem;
+    /* display: none; */
+}
+.sectionSeven .sectionSevenMenu{
+    /* border: 2px solid green; */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenHead h1{
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    word-spacing: -.2rem;
+    padding-top: 5rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenHead p{
+    font-size: 1.8rem;
+   margin: 1.5rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenHead div button{
+    padding: .9rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.7rem;
+    background-color: rgb(217, 77, 64);
+    border: none;
+    margin-bottom: 2rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenCard{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenCard>div{
+    /* border: 2px solid red; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: left;
+    width: 26%;
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenCard>div p{
+    font-size: 1.7rem;
+    padding-top: 2rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenCard>div p:first-child{
+    color: rgb(217, 77, 64);
+    font-size: 1.7rem;
+}
+.sectionSeven .sectionSevenMenu .sectionSevenCard>div p+h3{
+    font-size: 2.3rem;
+    padding-top: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 550;
+}
+.sectionEight{
+    background-color: rgb(1, 77, 77);
+    color: #fff;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+    /* display: none; */
+}
+.sectionEight .sectionEightMenu{
+    /* border: 2px solid rgb(239, 241, 239); */
+    width: 60%;
+    margin: auto;
+}
+.sectionEight .sectionEightMenu>div:first-child h1{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    font-size: 3.3rem;
+    padding-top: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 550;
+}
+.sectionEight .sectionEightMenu>div:first-child+div{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.sectionEight .sectionEightMenu>div:first-child+div button{
+ border: none;
+ padding: 1.2rem 2.4rem;
+ font-size: 1.7rem;
+ border-radius: .5rem;
+ font-weight: 500;
+}
+.sectionEight .sectionEightMenu>div:first-child+div+div{
+    /* border: 2px solid yellow; */
+    display: flex;
+    margin-bottom: 10rem;
+}
+.sectionEight .sectionEightMenu>div:first-child+div+div>div{
+    /* border: 2px solid white; */
+    border-right: 1px solid #fff;
+    padding: 2rem;
+}
+.sectionEight .sectionEightMenu>div:first-child+div+div>div:last-child{
+    border-right: none;
+}
+.sectionEight .sectionEightMenu>div:first-child+div+div>div h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 550;
+}
+.sectionEight .sectionEightMenu>div:first-child+div+div>div p{
+    width: 80%;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.sectionEight .sectionEightMenu>div:first-child+div+div+div p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+footer{
+    margin-bottom: 5rem;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    /* border: 2px solid red; */
+    padding: 3rem;
+    width: 80%;
+}
+.footer>div:first-child div p{
+    font-size: 2rem;
+    color: teal;
+    font-weight: 550;
+}
+.footer>div:first-child div+p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #525252;
+}
+.footer .footerMenu div ul{
+    list-style: none;
+}
+.footer .footerMenu div ul li{
+    font-size: 1.7rem;
+    color: #222525;
+    font-weight: 450;
+    margin-bottom: 1rem;
+}
+.footer .footerMenu div ul li:hover{
+    color: teal;
+    cursor: pointer;
+}
+.footer .footerMenu{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+}
+.footer1 .footerMenu1{
+    /* border: 2px solid green; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+.footer1 .footerMenu1>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer1 .footerMenu1>div div{
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    color: #393d3d;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer1 .footerMenu1>div:last-child span{
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    color: rgb(172, 168, 168);
+    font-weight: bold;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:1439px){
+    .sectionSix .sectionSixMenu{
+        width: 75%;
+        margin: auto;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        cursor: pointer;
+        padding: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 1rem;
+        margin-top: 5rem;
+        width: 25%;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div p a{
+        color: teal;
+        font-size: 1.6rem;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div p a:hover{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+@media all and (max-width:1340px){
+    .navHeader{
+        /* border: 2px solid red; */
+        width: 95%;
+    }
+    .navHeader ul .accountMenu,.navHeader ul .resourceMenu{
+        display: none;
+    }
+    .PricingMenu{
+        margin-right: 13rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child{
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+}
+
+
+
+@media all and (max-width:1200px){
+    .navHeader ul .accountMenu,navHeader ul .resourceMenu{
+        display: none;
+    }
+    .PricingMenu{
+        margin-right: 15rem;
+    }
+    .signMenu{
+        display: none;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child{
+        font-size: 3.5rem;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playpen Sans', cursive;
+        text-align: center;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child+p{
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard{
+        /* border: 2px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard>div{
+        /* border: 2px solid red; */
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: left;
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard>div p{
+        font-size: 1.7rem;
+        padding-top: 2rem;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard>div p:first-child{
+        color: rgb(217, 77, 64);
+        font-size: 1.7rem;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard>div p+h3{
+        font-size: 2.3rem;
+        padding-top: 2rem;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playpen Sans', cursive;
+        font-weight: 550;
+    }
+    .sectionEight .sectionEightMenu{
+        /* border: 2px solid rgb(239, 241, 239); */
+        width: 70%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child h1{
+        /* border: 2px solid red; */
+        width: 80%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div h3{
+        font-size: 1.9rem;
+        padding: 1rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div p{
+        width: 90%;
+        margin: auto;
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+@media all and (max-width:1135px){
+   nav ul .whyGustoMenu, .productsMenu,.solutionMenu,.accountMenu,.resourceMenu,.PricingMenu,.accountBtn,.logo{
+    display: none;
+   }
+    .responsiveNav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav>ul+ul{
+        justify-content: flex-end;
+        /* border: 2px solid black; */
+    }
+    .navHeader nav{
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    nav>ul{
+        justify-content: flex-end;
+        /* border: 1px solid green; */
+        width: 50%;
+    }
+    #logo{
+        display: block;
+        width: 50%;
+        /* border: 1px solid blue; */
+    }
+    #mainHeading{
+        font-size: 4rem;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playpen Sans', cursive;
+    }
+    #mainHeading+p{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .butto_Menu{
+        display: flex;
+        /* border: 1px solid red; */
+    }
+    .butto_Menu div{
+        width: 50%;
+        /* border: 1px solid red; */
+        margin-right: 0rem;
+    }
+    .butto_Menu div button{
+        padding: 1rem;
+        width: 80%;
+        margin-bottom: 2.5rem;
+    }
+    .main_list{
+        font-size: 1.4rem;
+    }
+    .main_list i{
+        color: teal;
+        font-size: 2.5rem;
+    }
+    .main_sign{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+    .main_sign a{
+        font-size: 1.6rem;
+    }
+    .sectionFirst{
+        background-color: #005961;
+        width: 100%;
+        /* height: 50rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionFirst-menu{
+       /* border:1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* margin-bottom: 3rem;
+        margin-top: 2rem; */
+        width: 70%;
+    }
+    .sectionInner{
+        padding: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        height: 100%;
+        border-right: 1px solid lightgray;
+    }
+    .last{
+        border: none;
+    }
+    .sectionFirst-menu>div{
+        /* border-right: 2px solid; */
+        padding-top: 12rem;
+    }
+    .sectionSecond .sectionSecondMenu{
+        width: 95%;
+    }
+    .sectionSeconAccordionHeading{
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    .sectionSecond .sectionSecondMenu .sectionSecond_img_div{
+        /* border: 2px solid blue; */
+        width: 40%;
+    }
+    .sectionSecond .sectionSecondMenu .sectionSecond_img{
+        /* border: 2px solid green; */
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    
+}
+
+
+
+
+
+
+@media all and (max-width:992px){
+    nav>ul #demo{
+     display: none;
+    }
+     .navHeader nav{
+         display: flex;
+         justify-content: space-between;
+         /* border: 1px solid red; */
+         width: 100%;
+     }
+     nav>ul{
+         justify-content: flex-end;
+         /* border: 1px solid green; */
+         width: 50%;
+     }
+     #logo{
+         display: block;
+         /* border: 1px solid blue; */
+     }
+     .modal_btn ul #demo{
+        display: none;
+     }
+     main{
+        flex-direction: column;
+    }
+    .left_main_panel{
+        /* border: 1px solid green; */
+        width: 90%;
+    }
+    .right_main_img{
+        /* border: 1px solid blue; */
+        margin-top: 1rem;
+        width: 100%
+    }
+    .right_main_img img{
+        width: 100%;
+    }
+    .butto_Menu{
+        display: flex;
+    }
+    .butto_Menu div{
+        width: 50%;
+        margin-right: 1rem;
+    }
+    .sectionFirst{
+        background-color: #005961;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionFirst-menu{
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 60%;
+    }
+    .sectionInner{
+        padding: 3rem;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    }
+    .last{
+        border-right: none;
+        border-bottom: none;
+    }
+    .secondLogo{
+        border-right: none;
+    }
+    .thirdLogo{
+        border-bottom: none;
+    }
+    .sectionFirst-menu>div{
+        /* border-right: 2px solid; */
+        padding-top: 0rem;
+    }
+    .sectionSecond{
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    .sectionSecond .sectionSecondMenu{
+        width: 95%;
+        /* border: 2px solid black; */
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .sectionSecond .sectionSecondMenu>div{
+        width: 100%;
+        /* border: 2px solid green; */
+    }
+    .sectionSecond_img_div{
+        display: inline-block;
+        margin-left: 25%;
+        margin-bottom: 10rem;
+    }
+    .sectionSeconAccordionHeading{
+        font-size: 3rem;
+    }
+    .sectionSecond .sectionSecondMenu .sectionSecond_img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .sectionThird .sectionThirdMenu{
+        width: 90%;
+    }
+    .sectionThird .sectionThirdMenu .sectionThirdItem .headPara{
+       font-size: 1.6rem;
+    }
+    .sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p{
+        font-size: 2rem;
+    }
+    .sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div>div>img{
+        width: 100%;
+        border: 1px solid lightgray;
+    }
+    .sectionForth .sectionForthMenu{
+        flex-direction: column-reverse;
+    }
+
+    .sectionFifth .sectionFifthMenu{
+        width: 90%;
+        flex-direction: column;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child{
+        font-size: 3rem;
+        line-height: 3.7rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child+p{
+        font-size: 1.7rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child+p+p a{
+        font-size: 1.7rem;
+    }
+    .sectionSix .sectionSixMenu>div:first-child h1{
+        font-size: 3.5rem;
+    }
+    .sectionSeven .sectionSevenMenu{
+        width: 90%;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: left;
+        width: 100%;
+        margin-right: 1rem;
+    }
+    .sectionEight .sectionEightMenu{
+        width: 60%;
+        margin: auto;
+    }
+    .sectionEight .sectionEightMenu>div:first-child h1{
+        width: 70%;
+        margin: auto;
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div{
+        /* border: 2px solid white; */
+        border-bottom: 1px solid #fff;
+        border-right: none;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        padding-bottom: 5rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div:last-child{
+        border-right: none;
+        border-bottom: none;
+        padding-bottom: none;
+        margin-bottom: none;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div h3{
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playpen Sans', cursive;
+        font-weight: 550;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div p{
+        width: 80%;
+        margin: auto;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div+div p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+
+    .footer{
+        /* display: grid; */
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+    }
+    .footer .footerMenu div ul li{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width:768px){
+    main{
+        width: 80%;
+        
+    }
+    #mainHeading{
+        font-size: 3.5rem;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playpen Sans', cursive;
+    }
+    .butto_Menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .butto_Menu div{
+        width: 100%;
+        margin: auto;
+        margin-right: 1rem;
+    }
+    .sectionFirst-menu{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 60%;
+    }
+    .sectionInner{
+        padding: 3rem;
+        height: 100%;
+        border-bottom: 1px solid lightgray;
+    }
+    .last{
+        border: none;
+    }
+    .thirdLogo,.firsLogo{
+        border-right: none;
+    }
+    .sectionFirst-menu div img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .sectionSecond .sectionSecondMenu .sectionSecond_img{
+        width: 150%;
+        display: block;
+        margin: auto;
+    }
+    .sectionForth .sectionForthMenu{
+        margin: auto;
+        width: 90%;
+    }
+    .sectionForth .sectionForthMenu>div img{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child{
+        font-size: 2.5rem;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playpen Sans', cursive;
+        text-align: center;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child+p{
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child+p+p a{
+        font-size: 1.6rem;
+        color: teal;
+    }
+    .sectionFifth .sectionFifthMenu{
+        width: 80%;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child+p{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child+p+p a{
+        font-size: 1.5rem;
+    }
+    .sectionSix .sectionSixMenu{
+        width: 80%;
+        margin: auto;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        cursor: pointer;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        margin-top: 1rem;
+        width: 35%;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div p a{
+        font-size: 1.4rem;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div p a:hover{
+        font-size: 1.4rem;
+    }
+    .sectionSix .sectionSixMenu>div:first-child h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .sectionSeven .sectionSevenMenu{
+        width: 85%;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenHead h1{
+        font-size: 2.2rem;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenHead p{
+        font-size: 1.6rem;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenHead div button{
+        width: 100%;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionSeven .sectionSevenMenu .sectionSevenCard>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: left;
+        width: 100%;
+        margin-right: 0rem;
+        padding-right: 0.5rem;
+    }
+    .sectionEight .sectionEightMenu{
+        width: 70%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child h1{
+        width: 90%;
+        margin: auto;
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div button{
+     width: 90%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div{
+        /* border: 2px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div{
+        /* border: 2px solid white; */
+        border-bottom: 1px solid #fff;
+        border-right: none;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    .footer>div:first-child div+p{
+        font-size: 1.2rem;
+    }
+    .footer .footerMenu div ul li{
+        font-size: 1.2rem;
+    }
+    .footer .footerMenu{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid lightgray;
+        padding-top: 2rem;
+    }
+    .footer1 .footerMenu1{
+        /* border: 2px solid green; */
+        width: 95%;
+    }
+    .footer1 .footerMenu1>div div{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        color: #393d3d;
+        font-weight: 500;
+    }
+    .footer1 .footerMenu1>div:last-child a{
+        margin-bottom: 1.5rem;
+    }
+    /* .footer1 .footerMenu1>div:last-child span{
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        color: rgb(172, 168, 168);
+        font-weight: bold;
+        background-color: #fff;
+        padding-bottom: 2rem;
+    } */
+}
+
+
+
+
+
+
+@media all and (max-width:565px){
+    .workBtn{
+        padding: 1rem;
+    }
+    nav>ul{
+        justify-content: flex-end;
+        width: 70%;
+    }
+    #logo{
+        display: block;
+        width: 30%;
+    }
+    #mainHeading{
+        font-size: 3rem;
+    }
+    .sectionFirst-menu{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+    }
+    .sectionFirst-menu div img{
+        width: 40%;
+        margin-left: 25%;
+    }
+    .sectionFirst-menu div p{
+        font-size: 1.2rem;
+    }
+    .sectionSeconAccordionHeading{
+        font-size: 2.5rem;
+    }
+    .sectionSeconAccordion .accordion-button{
+        font-size: 1.4rem;
+    }
+    .sectionSeconAccordion .accordion-body p{
+        font-size: 1.3rem;
+    }
+    .sectionSeconAccordion .accordion-body p+div a{
+        font-size: 1.3rem;
+    }
+    .secondSectionBtn button{
+       padding: .5rem;
+       padding-left: 2rem;
+       padding-right: 2rem;
+       font-size: 1.5rem;
+    }
+    .sectionSecond_img_div{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10rem;
+        margin-right: 15rem;
+    }
+    .sectionSecond .sectionSecondMenu .sectionSecond_img{
+        width: 17rem;
+        display: block;
+        margin: auto;
+    }
+    .sectionThird .sectionThirdMenu{
+        width: 80%;
+    }
+    .sectionThird .sectionThirdMenu .sectionThirdItem .headPara{
+       font-size: 1.6rem;
+    }
+    .sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p{
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .sectionThird .sectionThirdMenu .sectionThirdItem .headPara+p+div>div:last-child{
+        font-size: 1.3rem;
+    }
+    .sectionForth .sectionForthMenu{
+        width: 95%;
+    }
+    .sectionForth .sectionForthMenu>div img{
+        width: 100%;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child{
+        font-size: 2.2rem;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child+p{
+        font-size: 1.4rem;
+    }
+    .sectionForth .sectionForthMenu>div>p:first-child+p+p a{
+        font-size: 1.5rem;
+    }
+    .sectionFifth .sectionFifthMenu{
+        width: 97%;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child+p{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .sectionFifth .sectionFifthMenu>div>p:first-child+p+p a{
+        font-size: 1.5rem;
+    }
+    .sectionSix .sectionSixMenu{
+        width: 100%;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div{
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div p a{
+        color: teal;
+        font-size: 1.2rem;
+    }
+    .sectionSix .sectionSixMenu .sectionSixcard>div p a:hover{
+        font-size: 1.2rem;
+    }
+    .sectionSix .sectionSixMenu>div:first-child h1{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .sectionSeven .sectionSevenMenu{
+        width: 95%;
+    }
+    .sectionEight .sectionEightMenu{
+        width: 90%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child h1{
+        /* border: 2px solid red; */
+        width: 95%;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div button{
+     padding: 1rem 2.4rem;
+     width: 100%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div{
+        /* border: 2px solid white; */
+        border-bottom: 1px solid #fff;
+        border-right: none;
+        margin-bottom: 2rem;
+        padding-bottom: 4rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div h3{
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div>div p{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .sectionEight .sectionEightMenu>div:first-child+div+div+div p{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width:399px) and (min-width:0px){
+    .workBtn{
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+    .navHeader{
+        width: 100%;
+    }
+    .navHeader nav{
+        width: 100%;
+    }
+    nav>ul{
+        justify-content: flex-end;
+        width: 90%;
+    }
+    #logo{
+        display: block;
+        width: 10%;
+        justify-content: flex-end;
+    }
+    #logo img{
+        width: 5rem;
+    }
+    .sectionFirst-menu div img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .sectionSix .sectionSixMenu>div:first-child h1{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+}

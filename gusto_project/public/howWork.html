@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/howWork.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="headMenu">
+              <div>
+                  <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="">
+              </div>
+              <div>
+                  <p>
+                      Ready to set up your company with Gusto? 
+                  </p>
+                  <button class="btn btn-primary">Create Account</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <div class="bodyMenu">
+        <div>
+            <img src="https://prod.gusto-assets.com/assets/packs/media/explore/HROS-c9d08453.svg" alt="">
+        </div>
+        <div class="bodyForm">
+            <div class="bodyFormMenu">
+                <h1>Who do you plan to pay with Gusto?</h1>
+                <p>Select all that apply.</p>
+                <div class="divSelect">Myself</div>
+                <div class="divSelect">W-2 employees</div>
+                <div class="divSelect">Contractors</div>
+                <p>At least one option is required.</p>
+            </div>
+            <div class="bodyFormMenu">
+                <h1>How many states will you be running payroll in?</h1>
+                <p>We support growing businesses at any stage.</p>
+                <div class="divSelect">1 state</div>
+                <div class="divSelect">2 or more states</div>
+            </div>
+            <div class="bodyFormMenu">
+                <h1>How do you currently run payroll?</h1>
+                <!-- <p>Select all that apply.</p> -->
+                <div class="divSelect">We’re new to running payroll</div>
+                <div class="divSelect">We use another online payroll software</div>
+                <div class="divSelect">CWe do it ourselves manually</div>
+                <!-- <p>At least one option is required.</p> -->
+            </div>
+            <div class="bodyFormMenu">
+                <h1>What do you want to use Gusto for?</h1>
+                <p>We’ve pre-checked what most people want to learn more about. Select all that apply.</p>
+                <div class="divSelect">Payroll</div>
+                <div class="divSelect">Time + attendance</div>
+                <div class="divSelect">Hiring + onboarding</div>
+                <div class="divSelect">Employee benefits</div>
+                <div class="divSelect">Talent management</div>
+                <div class="divSelect">Insights + reporting</div>
+                <!-- <p></p> -->
+            </div>
+            <div class="formDiv">
+                <div>
+                  <form action="#">
+                    <h1>Tell us a little about you.</h1>
+                    <p>We’ll use this information to provide guided recommendations and relevant links.</p>
+                        <div class="name">
+                            <dl>
+                                <dt>
+                                    <label for="name" class="form-check-label mb-2">First name</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="name" class="form-control" placeholder="First name">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <label for="lname" class="form-check-label mb-2">last name</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="lname" class="form-control" placeholder="Last name">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <label for="lname" class="form-check-label mb-2">Work email</label>
+                                </dt>
+                                <dd>
+                                    <input type="email" name="lname" placeholder="Work email address" class="form-control">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="name">
+                            <dl>
+                                <dt>
+                                    <label for="lname" class="form-check-label mb-2">Company name</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="lname" placeholder="Company name" class="form-control">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <label for="name" class="form-check-label mb-2">No. of employees</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="name" placeholder="No. of employees" class="form-control">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <label for="lname" class="form-check-label mb-2">Company phone</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="lname" placeholder="(+91) 10 digit" class="form-control">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <label for="lname" class="form-check-label mb-2">Industry</label>
+                                </dt>
+                                <dd>
+                                    <select name="industry" id="indstury" class="form-select">
+                                        <option value="">Please Select</option>
+                                        <option value="Healthcare, wellness and fitness">Healthcare, wellness and fitness</option>
+                                        <option value="professional service">professional service</option>
+                                        <option value="technology">technology</option>
+                                        <option value="financial service">financial service</option>
+                                        <option value="Non-profit">Non-profir</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <input type="submit" value="Lets go -->" class="btn btn-danger w-100 p-2 mt-4">
+                        </div>
+                        <div>
+                            <p class="text-center mt-4">Want a breakdown of all plans and features? <a href="#">See pricing</a></p>
+                        </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    let divSelect = document.getElementsByClassName("divSelect");
+    function changeColor(event){
+        if(event.target.style.backgroundColor==="green" && event.target.style.color==="white"){
+            console.log("Deselected")
+            event.target.style.backgroundColor="white"
+            event.target.style.color="black"
+        }else{
+            event.target.style.backgroundColor="green"
+            event.target.style.color="white"
+        }
+        // event.target.removeEventListener('click', changeColor);
+    }
+    for(let i=0; i<divSelect.length; i++){
+            divSelect[i].addEventListener('click',changeColor)
+    }
+</script>

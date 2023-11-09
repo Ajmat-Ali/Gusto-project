@@ -1,0 +1,212 @@
+body{
+    background-repeat: no-repeat;
+}
+.mainParent{
+    display: flex;
+}
+.parent{
+    background-image: url("https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/illustrations/illo-2-person-scene-01ac18a3.svg");
+    width: 60%;
+    height: 715px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+.formDiv{
+    /* border: 2px solid green; */
+    width: 450px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.formDiv img{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 35%;
+    margin-bottom: 20px;
+    padding-top: 35px;
+    /* border: 2px solid red; */
+}
+.formDiv form{
+    /* border: 2px solid blue; */
+    width: 75%;
+    margin:auto;
+}
+.formDiv form input{
+    background-color: rgb(233, 228, 228);
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+.formDiv form button{
+    border: none;
+    text-decoration: underline;
+    color: teal;
+    font-weight: bold;
+    background-color: rgb(233, 228, 228);
+    border-bottom: 1px solid black;
+}
+.formDiv form a{
+    color: teal;
+    font-weight: 500;
+}
+.check input{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.check input+label{
+    font-weight: 400;
+    font-size: 18px;
+}
+.check+div button{
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: #fff;
+    border-radius: 5px;
+}
+.check+div p{
+    /* border: 1px solid lightgray;
+    border-top: none;
+    border-left: none; */
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+.check+div p span{
+    position: relative;
+    top: 10px;
+    background-color: #fff;
+    color: #2e2e2e;
+    font-weight: 450;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.check+div p+div{
+    width: 70%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    /* text-align: left; */
+}
+.check+div p+div img{
+    /* border: 2px solid green; */
+    width: 10%;
+    margin: 0px;
+    padding: 0px;
+}
+.check+div p+div a{
+    margin-left: 12px;
+    color: #5f5c5c;
+    font-size: 15px;
+}
+.signWithApp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+.signWithApp div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+    width: 49%;
+    padding: 5px;
+}
+.signWithApp div img{
+    width: 12%;
+    margin: 0px;
+    padding: 0px;
+}
+.signWithApp div a{
+   color: black;
+   font-size: 15px;
+}
+.signWithApp>div:first-child{
+    border: 1.4px solid lightgray;
+}
+.signWithApp>div:last-child{
+    border: 1.6px solid rgb(7, 99, 170);
+    /* color: 1px solid blue; */
+}
+.signWithApp>div:last-child a{
+    color: rgb(7, 99, 170);
+    text-decoration: underline;
+   
+}
+#last{
+    padding-bottom: 35px;
+    font-size: 15px;
+}
+#footer{
+    background-color: #fff;
+    margin-top: 20px;
+    line-height: 25px;
+    color: #2e2e2e;
+    /* margin-bottom: 0px; */
+}
+#footer a{
+    color: teal;
+}
+
+
+
+
+
+@media all and (max-width:768px){
+    .parent{ 
+        background-image: none;
+        width: 100%;
+        height: 100%;
+    }
+    .formDiv{
+        width: 70%;
+    }
+    .signWithApp div a{
+       font-size: 14px;
+    }
+    .signWithApp>div:last-child{
+        border: 1.4px solid rgb(7, 99, 170);
+    } 
+}
+
+@media all and (max-width:565px){
+    .formDiv{
+        width: 90%;
+    }
+    .signWithApp div a{
+        font-size: 12px;
+     }
+     .signWithApp>div:last-child{
+         border: 1px solid rgb(7, 99, 170);
+     }
+     .check+div p+div img{
+        /* border: 2px solid green; */
+        width: 9%;
+    }
+    .check+div p+div a{
+        font-size: 12px;
+    }
+    .check input{
+        font-size: 20px;
+    }
+    .check input+label{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+

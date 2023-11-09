@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Include Bootstrap CSS and JS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Add a CSS class for transitioning border color */
+    .accordion-button.transition {
+      transition: border-color 1s ease; /* Change '1s' to the desired duration in seconds */
+    }
+  </style>
+  <script>
+    $(document).ready(function(){
+      // Add custom CSS to fill the border with color slowly
+      $('.accordion-button.transition').css('border-color', '#ff5733'); // Change '#ff5733' to the desired color code
+    });
+  </script>
+</head>
+<body>
+
+<!-- Your accordion structure -->
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button transition" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Content for Accordion Item #1
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

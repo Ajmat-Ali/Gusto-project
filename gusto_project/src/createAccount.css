@@ -1,0 +1,160 @@
+header{
+    position: sticky;
+    background-color: #fff;
+    padding: 5px;
+    top: 0px;
+    z-index: 1001;
+    background-color: #ffffff;
+      /* border: 2px solid red; */
+      /* padding: 5px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.head{
+   /* border: 2px solid red; */
+   width: 80%;
+   padding: 10px;
+   margin: auto;
+}
+.head div img{
+    width: 90px;
+}
+/* .bodyDiv{
+    border: 2px solid green;
+} */
+.bodyDiv .bodyDivMenu{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+.bodyDiv .bodyDivMenu>div{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.bodyDiv .bodyDivMenu>div:first-child{
+   position: sticky;
+   top: 66px;
+}
+.bodyDiv .bodyDivMenu>div:first-child img{
+    width: 100%;
+    height: 680px;
+    /* border: 2px solid black; */
+}
+/* .formMainDiv{
+    border: 2px solid red;
+} */
+.formMainDiv #google{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+}
+.formMainDiv #google:hover{
+    background-color: #ddd;
+    color: teal;
+}
+.formMainDiv #google img{
+    margin-right: 10px;
+}
+.formMainDiv #google+p{
+    border: 1px solid lightgray;
+    text-align: center;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+.formMainDiv #google+p span{
+    position: relative;
+    bottom: 15px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: rgb(117, 111, 111);
+}
+
+
+
+
+
+
+
+.formMainDiv .formDiv{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin:auto
+}
+form .name{
+    display: flex;
+    justify-content: space-between;
+}
+form .name dl{
+    width: 48%;
+}
+.formMainDiv .formDiv input{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.hideBtn{
+    color: teal;
+    border: none;
+    text-decoration: underline;
+}
+.formMainDiv .formDiv input[type="submit"]{
+    border: none;
+    padding: 7px;
+}
+.formMainDiv .formDiv ul li{
+    font-size: 18px;
+}
+
+
+
+
+
+@media all and (max-width:992px){
+    .head{
+       width: 75%;
+    }
+    .bodyDiv .bodyDivMenu>div{
+        width: 100%;
+    }
+    .bodyDiv .bodyDivMenu>div:first-child{
+       display: none;
+    }
+    .bodyDiv .bodyDivMenu>div:first-child img{
+        width: 100%;
+        height: 680px;
+        display: none;
+    }
+}
+
+
+@media all and (max-width:768px){
+    .head{
+       text-align: center;
+    }
+    .head div img{
+        width: 90px;
+    }
+    .formMainDiv #google{
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        /* background-color: red; */
+        padding: 8px;
+    }
+    .formMainDiv .formDiv ul li{
+        font-size: 16px;
+    }
+}
+
+
+@media all and (max-width:550px){
+    .formMainDiv #google img{
+        margin-right: 10px;
+        width: 5%;
+    }
+}
